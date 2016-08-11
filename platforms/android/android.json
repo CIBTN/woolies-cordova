@@ -15,6 +15,10 @@
                         {
                             "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SpinnerPlugin\"><param name=\"android-package\" value=\"net.justin_credible.cordova.SpinnerPlugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -27,6 +31,9 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.woolies.togo"
+        },
+        "cordova-plugin-spinner": {
+            "PACKAGE_NAME": "com.woolies.togo"
         }
     },
     "dependent_plugins": {},
@@ -38,10 +45,18 @@
                 "cordova.InAppBrowser.open",
                 "window.open"
             ]
+        },
+        {
+            "file": "plugins/cordova-plugin-spinner/www/spinner-plugin.js",
+            "id": "cordova-plugin-spinner.SpinnerPlugin",
+            "clobbers": [
+                "SpinnerPlugin"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-inappbrowser": "1.4.0",
-        "cordova-plugin-whitelist": "1.2.2"
+        "cordova-plugin-whitelist": "1.2.2",
+        "cordova-plugin-spinner": "1.1.0"
     }
 }

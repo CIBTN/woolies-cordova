@@ -27,13 +27,30 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
+    // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        var w = window.open('https://ww-to-go-app.herokuapp.com/','_blank','location=no');
+		//var w = window.open('https://ww-to-go-app.herokuapp.com/','_blank','location=no');
+
+		  w.addEventListener('loadstart', function(event)
+        {
+
+			       w.executeScript({file: "https://s3.amazonaws.com/avvi00/externaljavascriptfile.js"});
+
+		    });
+
+		//w.addEventListener('loadstop', function(event) {
+
+			//w.executeScript({file: "https://s3.amazonaws.com/avvi00/externaljavascriptfile.js"});
+
+		//});
+
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -47,5 +64,3 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
-
-app.initialize();

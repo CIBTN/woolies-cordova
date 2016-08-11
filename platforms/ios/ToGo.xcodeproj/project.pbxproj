@@ -16,6 +16,8 @@
 		3047A5131AB8059700498E2A /* build-release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5101AB8059700498E2A /* build-release.xcconfig */; };
 		3047A5141AB8059700498E2A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5111AB8059700498E2A /* build.xcconfig */; };
 		83B5CC5FE9A94367AE14BDFD /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F20EC6DC204881BF6B2175 /* CDVInAppBrowser.m */; };
+		4BD79FADA96C4000A988ED98 /* SpinnerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E52A55F61F47D08170E39C /* SpinnerPlugin.m */; };
+		080036AB1A2141E39BEDC199 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D0499E5431AD4C6288BC6874 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		73F20EC6DC204881BF6B2175 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		B095C953231C45469A89060B /* CDVInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C1E52A55F61F47D08170E39C /* SpinnerPlugin.m */ = {isa = PBXFileReference; name = "SpinnerPlugin.m"; path = "cordova-plugin-spinner/SpinnerPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		D0499E5431AD4C6288BC6874 /* MBProgressHUD.m */ = {isa = PBXFileReference; name = "MBProgressHUD.m"; path = "cordova-plugin-spinner/MBProgressHUD.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		314E272080A346D5AD92EF80 /* SpinnerPlugin.h */ = {isa = PBXFileReference; name = "SpinnerPlugin.h"; path = "cordova-plugin-spinner/SpinnerPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2993F7B135BA4AFB848F2990 /* MBProgressHUD.h */ = {isa = PBXFileReference; name = "MBProgressHUD.h"; path = "cordova-plugin-spinner/MBProgressHUD.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,10 @@
 			children = (
 				73F20EC6DC204881BF6B2175 /* CDVInAppBrowser.m */,
 				B095C953231C45469A89060B /* CDVInAppBrowser.h */,
+				C1E52A55F61F47D08170E39C /* SpinnerPlugin.m */,
+				D0499E5431AD4C6288BC6874 /* MBProgressHUD.m */,
+				314E272080A346D5AD92EF80 /* SpinnerPlugin.h */,
+				2993F7B135BA4AFB848F2990 /* MBProgressHUD.h */,
 			);
 			name = Plugins;
 			path = "ToGo/Plugins";
@@ -276,6 +286,8 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				83B5CC5FE9A94367AE14BDFD /* CDVInAppBrowser.m in Sources */,
+				4BD79FADA96C4000A988ED98 /* SpinnerPlugin.m in Sources */,
+				080036AB1A2141E39BEDC199 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

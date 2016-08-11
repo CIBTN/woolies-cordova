@@ -12,6 +12,9 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.woolies.togo"
+        },
+        "cordova-plugin-spinner": {
+            "PACKAGE_NAME": "com.woolies.togo"
         }
     },
     "dependent_plugins": {}

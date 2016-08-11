@@ -18,12 +18,14 @@
     <feature name="InAppBrowser">
         <param name="ios-package" value="CDVInAppBrowser" />
     </feature>
+    <feature name="SpinnerPlugin">
+        <param name="ios-package" value="SpinnerPlugin" />
+    </feature>
     <name>ToGo</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
     </author>
     <content src="index.html" />
     <access origin="*" />

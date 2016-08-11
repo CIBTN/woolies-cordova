@@ -35,20 +35,21 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        var w = window.open('https://ww-to-go-app.herokuapp.com/','_blank','location=no');
-		//var w = window.open('https://ww-to-go-app.herokuapp.com/','_blank','location=no');
+        var w = window.open('https://ww-to-go-app.herokuapp.com/','_blank','location=no,zoom=no');
+        w.addEventListener('exit', function () {
+                navigator.app.exitApp();
+            });
 
-		//w.addEventListener('loadstart', function(event) {
+		  w.addEventListener('loadstart', function(event)
+        {
+          var options = { dimBackground: true };
+          SpinnerPlugin.activityStart("Loading...", options);
+		    });
 
-			//w.executeScript({file: "https://s3.amazonaws.com/avvi00/externaljavascriptfile.js"});
-
-		//});
-
-		//w.addEventListener('loadstop', function(event) {
-
-			//w.executeScript({file: "https://s3.amazonaws.com/avvi00/externaljavascriptfile.js"});
-
-		//});
+		  w.addEventListener('loadstop', function(event)
+        {
+          SpinnerPlugin.activityStop();
+		    });
 
     },
     // Update DOM on a Received Event
