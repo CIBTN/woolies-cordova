@@ -15,6 +15,16 @@
         },
         "cordova-plugin-spinner": {
             "PACKAGE_NAME": "com.woolies.togo"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "672065826034",
+            "PACKAGE_NAME": "com.woolies.togo"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.woolies.togo"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.woolies.togo"
         }
     },
     "dependent_plugins": {}

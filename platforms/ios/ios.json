@@ -15,6 +15,40 @@
                         {
                             "xml": "<feature name=\"SpinnerPlugin\"><param name=\"ios-package\" value=\"SpinnerPlugin\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"PushNotification\"><param name=\"ios-package\" value=\"PushPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "UIBackgroundModes": [
+                        {
+                            "xml": "<array><string>remote-notification</string></array>",
+                            "count": 1
+                        }
+                    ],
+                    "GCM_SENDER_ID": [
+                        {
+                            "xml": "<string>672065826034</string>",
+                            "count": 1
+                        }
+                    ],
+                    "IS_GCM_ENABLED": [
+                        {
+                            "xml": "<true />",
+                            "count": 1
                         }
                     ]
                 }
@@ -29,6 +63,16 @@
             "PACKAGE_NAME": "com.woolies.togo"
         },
         "cordova-plugin-spinner": {
+            "PACKAGE_NAME": "com.woolies.togo"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "672065826034",
+            "PACKAGE_NAME": "com.woolies.togo"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.woolies.togo"
+        },
+        "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "com.woolies.togo"
         }
     },
@@ -50,11 +94,46 @@
             "clobbers": [
                 "SpinnerPlugin"
             ]
+        },
+        {
+            "file": "plugins/phonegap-plugin-push/www/push.js",
+            "id": "phonegap-plugin-push.PushNotification",
+            "pluginId": "phonegap-plugin-push",
+            "clobbers": [
+                "PushNotification"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
+            "id": "cordova-plugin-console.console",
+            "pluginId": "cordova-plugin-console",
+            "clobbers": [
+                "console"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-console/www/logger.js",
+            "id": "cordova-plugin-console.logger",
+            "pluginId": "cordova-plugin-console",
+            "clobbers": [
+                "cordova.logger"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+            "id": "cordova-plugin-dialogs.notification",
+            "pluginId": "cordova-plugin-dialogs",
+            "merges": [
+                "navigator.notification"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-inappbrowser": "1.4.0",
         "cordova-plugin-whitelist": "1.2.2",
-        "cordova-plugin-spinner": "1.1.0"
+        "cordova-plugin-spinner": "1.1.0",
+        "phonegap-plugin-push": "1.8.1",
+        "cordova-plugin-console": "1.0.3",
+        "cordova-plugin-dialogs": "1.2.1"
     }
 }

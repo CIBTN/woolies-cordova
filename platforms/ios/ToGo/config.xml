@@ -21,6 +21,15 @@
     <feature name="SpinnerPlugin">
         <param name="ios-package" value="SpinnerPlugin" />
     </feature>
+    <feature name="PushNotification">
+        <param name="ios-package" value="PushPlugin" />
+    </feature>
+    <feature name="Console">
+        <param name="ios-package" value="CDVLogger" />
+    </feature>
+    <feature name="Notification">
+        <param name="ios-package" value="CDVNotification" />
+    </feature>
     <name>ToGo</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
