@@ -27,6 +27,10 @@
                         {
                             "xml": "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Clipboard\"><param name=\"android-package\" value=\"com.verso.cordova.clipboard.Clipboard\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -122,6 +126,9 @@
         },
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "com.woolies.togo"
+        },
+        "com.verso.cordova.clipboard": {
+            "PACKAGE_NAME": "com.woolies.togo"
         }
     },
     "dependent_plugins": {},
@@ -161,6 +168,13 @@
             "merges": [
                 "navigator.notification"
             ]
+        },
+        {
+            "file": "plugins/com.verso.cordova.clipboard/www/clipboard.js",
+            "id": "com.verso.cordova.clipboard.Clipboard",
+            "clobbers": [
+                "cordova.plugins.clipboard"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -169,6 +183,7 @@
         "cordova-plugin-spinner": "1.1.0",
         "phonegap-plugin-push": "1.8.1",
         "cordova-plugin-console": "1.0.3",
-        "cordova-plugin-dialogs": "1.2.1"
+        "cordova-plugin-dialogs": "1.2.1",
+        "com.verso.cordova.clipboard": "0.1.0"
     }
 }

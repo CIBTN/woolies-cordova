@@ -48,6 +48,14 @@ module.exports = [
         "merges": [
             "navigator.notification"
         ]
+    },
+    {
+        "file": "plugins/com.verso.cordova.clipboard/www/clipboard.js",
+        "id": "com.verso.cordova.clipboard.Clipboard",
+        "pluginId": "com.verso.cordova.clipboard",
+        "clobbers": [
+            "cordova.plugins.clipboard"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -58,7 +66,8 @@ module.exports.metadata =
     "cordova-plugin-spinner": "1.1.0",
     "phonegap-plugin-push": "1.8.1",
     "cordova-plugin-console": "1.0.3",
-    "cordova-plugin-dialogs": "1.2.1"
+    "cordova-plugin-dialogs": "1.2.1",
+    "com.verso.cordova.clipboard": "0.1.0"
 }
 // BOTTOM OF METADATA
 });

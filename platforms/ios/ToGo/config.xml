@@ -30,6 +30,9 @@
     <feature name="Notification">
         <param name="ios-package" value="CDVNotification" />
     </feature>
+    <feature name="Clipboard">
+        <param name="ios-package" value="CDVClipboard" />
+    </feature>
     <name>ToGo</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.

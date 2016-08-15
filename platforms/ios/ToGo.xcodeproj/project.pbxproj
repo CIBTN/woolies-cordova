@@ -53,6 +53,7 @@
 		63748609FC33479D8D1A5F79 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD465ECC85141BABD610463 /* CDVNotification.m */; };
 		9E930D9B3B6548D2B4DA42DE /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D84407701C574B4E95E80618 /* CDVNotification.bundle */; };
 		324DF99E6E7641A789D82A93 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75073FDCFC0049EA9BF22730 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		56AC3763B4134E61A9B850E6 /* CDVClipboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4B7EBEF6A4E29BE193376 /* CDVClipboard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +153,8 @@
 		D44DB4CC924942E7A7E163E4 /* CDVNotification.h */ = {isa = PBXFileReference; name = "CDVNotification.h"; path = "cordova-plugin-dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		D84407701C574B4E95E80618 /* CDVNotification.bundle */ = {isa = PBXFileReference; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
 		75073FDCFC0049EA9BF22730 /* AudioToolbox.framework */ = {isa = PBXFileReference; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		7FE4B7EBEF6A4E29BE193376 /* CDVClipboard.m */ = {isa = PBXFileReference; name = "CDVClipboard.m"; path = "com.verso.cordova.clipboard/CDVClipboard.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		D24C0AADD5AD4403AB587277 /* CDVClipboard.h */ = {isa = PBXFileReference; name = "CDVClipboard.h"; path = "com.verso.cordova.clipboard/CDVClipboard.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +347,8 @@
 				0E12707B3378418A99B1D0F2 /* CDVLogger.h */,
 				0DD465ECC85141BABD610463 /* CDVNotification.m */,
 				D44DB4CC924942E7A7E163E4 /* CDVNotification.h */,
+				7FE4B7EBEF6A4E29BE193376 /* CDVClipboard.m */,
+				D24C0AADD5AD4403AB587277 /* CDVClipboard.h */,
 			);
 			name = Plugins;
 			path = "ToGo/Plugins";
@@ -466,6 +471,7 @@
 				A038718D73C34A38A2E0019F /* PushPlugin.m in Sources */,
 				C9EA0EA022A142A997F032DF /* CDVLogger.m in Sources */,
 				63748609FC33479D8D1A5F79 /* CDVNotification.m in Sources */,
+				56AC3763B4134E61A9B850E6 /* CDVClipboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

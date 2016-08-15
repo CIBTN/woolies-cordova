@@ -25,6 +25,9 @@
         },
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "com.woolies.togo"
+        },
+        "com.verso.cordova.clipboard": {
+            "PACKAGE_NAME": "com.woolies.togo"
         }
     },
     "dependent_plugins": {}
